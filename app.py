@@ -84,6 +84,7 @@ def index():
 
     return render_template('index.html')
 
+<<<<<<< HEAD
 if __name__ == '__main__':
     app.config['UPLOAD_FOLDER'] = 'uploads'  # Create a folder named 'uploads' in your project directory
     app.run(host="0.0.0.0",port=5000)
@@ -93,4 +94,9 @@ if __name__ == '__main__':
 
 
 
+=======
+# if __name__ == '__main__':
+#     app.config['UPLOAD_FOLDER'] = 'uploads'  # Create a folder named 'uploads' in your project directory
+#     app.run(debug=True)
+>>>>>>> 98c52bd4205a89d49955c9f4eb135a49927c2dc2
 
