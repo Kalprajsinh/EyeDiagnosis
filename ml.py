@@ -16,14 +16,14 @@ batch_size = 32
 
 # Load train and test data
 train_generator = train_datagen.flow_from_directory(
-    r"C:\Users\91878\OneDrive\Desktop\eyemove1\processed_images\train",
+    r"processed_images\train",
     target_size=(224, 224),
     batch_size=batch_size,
     class_mode='binary'
 )
 
 test_generator = test_datagen.flow_from_directory(
-    r"C:\Users\91878\OneDrive\Desktop\eyemove1\processed_images\test",
+    r"processed_images\test",
     target_size=(224, 224),
     batch_size=batch_size,
     class_mode='binary'

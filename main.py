@@ -44,7 +44,7 @@ import os
 app = Flask(__name__)
 
 # Load the trained model
-model = load_model(r'C:\Users\91878\OneDrive\Desktop\eyemove1\model.h5')  # Update with your model file path
+model = load_model(r'model.h5')  # Update with your model file path
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -84,7 +84,7 @@ def index():
 
     return render_template('index.html')
 
-if __name__ == '__main__':
-    app.config['UPLOAD_FOLDER'] = 'uploads'  # Create a folder named 'uploads' in your project directory
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.config['UPLOAD_FOLDER'] = 'uploads'  # Create a folder named 'uploads' in your project directory
+#     app.run(debug=True)
 
